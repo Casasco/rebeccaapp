@@ -15,7 +15,7 @@
           "options": {
             "outputPath": "dist/rebeccaapp",
             "index": "src/index.html",
-            "main": "src/main.ts",  // "browser" foi renomeado para "main"
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
