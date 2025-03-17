@@ -17,7 +17,7 @@ export class AppComponent {
   ngOnInit(): void {
     this.pegaDataAtual();
   }
-
+  
   pegaDataAtual(): void {
     this.currentDate = new Date();
   }
