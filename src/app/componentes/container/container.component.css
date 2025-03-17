@@ -6,7 +6,9 @@
     width: 684px;
     max-width: 90%;
     margin: 0 auto;
-    padding: 56px 134px;
+    padding: 30px 100px;
     margin-top: 80px;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
