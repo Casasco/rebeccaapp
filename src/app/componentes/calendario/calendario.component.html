@@ -1,0 +1,6 @@
+<mat-card class="app-calendario">
+    <mat-calendar [(selected)]="dataSelecionada"></mat-calendar>
+  </mat-card>
+  
+  <p>Data selecionada: {{ dataSelecionada | date: 'dd/MM/yyyy' }}</p>
+  

@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ContainerComponent } from './componentes/container/container.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { FotoComponent } from './componentes/foto/foto.component';
+import { CalendarioComponent } from "./componentes/calendario/calendario.component";
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ContainerComponent, HeaderComponent, FotoComponent],
+  imports: [RouterOutlet, ContainerComponent, HeaderComponent, FotoComponent, CalendarioComponent, MatButtonModule, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
