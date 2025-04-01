@@ -28,7 +28,7 @@ export class FotoComponent {
     const dataAtual = new Date();
     const dataString = dataAtual.toLocaleDateString("pt-BR");  // Formato: 'yyyy-mm-dd'
     if(dataString === '06/04/2025'){
-      this.imagemSelecionada = 'img3.jpg'
+      this.imagemSelecionada = 'foto_dia06.jpg'
     }
     else{
       // Usando a data atual para gerar uma "semente" para a aleatoriedade

@@ -6,7 +6,7 @@ import { AppComponent } from './app/app.component';
 const dataAtual = new Date().toLocaleDateString('pt-BR'); // Formato YYYY-MM-DD
 console.log(dataAtual);
 
-if (dataAtual === '24/03/2025') {
+if (dataAtual === '06/04/2025') {
   document.documentElement.style.setProperty('--cor-fundo-principal', 'rgb(12, 188, 12)');
   document.documentElement.style.setProperty('--cor-fundo-secundario', 'rgb(252, 15, 192)');
   document.documentElement.style.setProperty('--cor-texto', 'rgb(252, 15, 192)');
