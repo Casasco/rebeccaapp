@@ -27,8 +27,11 @@ export class FotoComponent {
   selecionarImagemUnica(): void {
     const dataAtual = new Date();
     const dataString = dataAtual.toLocaleDateString("pt-BR");  // Formato: 'yyyy-mm-dd'
-    
-    // Usando a data atual para gerar uma "semente" para a aleatoriedade
+    if(dataString === '06/04/2025'){
+      this.imagemSelecionada = 'img3.jpg'
+    }
+    else{
+      // Usando a data atual para gerar uma "semente" para a aleatoriedade
     const seed = parseInt(dataString.replace(/-/g, ''), 10);  // Ex: 20250317 (17 de março de 2025)
     
     // Gerando um índice aleatório baseado na "semente"
@@ -50,5 +53,7 @@ export class FotoComponent {
 
     // Atribui a imagem selecionada
     this.imagemSelecionada = this.fotos[indiceAleatorio];
+    }
+  
   }
 }

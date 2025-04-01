@@ -1,7 +1,29 @@
+:root{
+    --cor-fundo-principal: rgb(255, 149, 228);
+    --cor-fundo-secundario: rgb(231, 241, 255);
+    --cor-texto: ();
+    --cor-fundo-botao: rgb(255, 149, 228);
+    --cor-texto-botao: white;
+}
+
+
 body {
-    background: linear-gradient(180deg, #ff95e4 0%, #E7F1FF 100%);
+    background: linear-gradient(180deg, var(--cor-fundo-principal) 0%, var(--cor-fundo-secundario) 100%);
     margin: 0;
     min-height: 100vh;
+    color: var(--cor-texto)
 }
+
+a{
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--cor-fundo-botao);
+    color: var(--cor-texto-botao);
+    text-align: center;
+    margin: 10px;
+    text-decoration: none
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

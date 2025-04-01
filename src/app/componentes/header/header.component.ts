@@ -18,8 +18,8 @@ export class HeaderComponent implements OnInit {
   calculateDaysRemaining(): void {
     var targetDate = new Date('2025-03-23'); // Data específica
     const currentDate = new Date();
-    const currentDateString = currentDate.toISOString().split('T')[0];
-    var targetDateString = targetDate.toISOString().split('T')[0];
+    const currentDateString = currentDate.toLocaleDateString('pt-BR');
+    var targetDateString = targetDate.toLocaleDateString('pt-BR');
     
     if(currentDateString === targetDateString){
       this.mensagemHeader = 'Hoje a Rebecca se mudou :(';
@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
     }
     if(currentDate > targetDate){
       targetDate = new Date('2025-07-25');
-      targetDateString = targetDate.toISOString().split('T')[0];
+      targetDateString = targetDate.toLocaleDateString('pt-BR');
       if(currentDateString === targetDateString){
         this.mensagemHeader = 'Hoje a Rebecca voltou!';
         return;

@@ -1,10 +1,6 @@
 <app-container>
-  <p class="data">{{currentDate.toLocaleDateString("pt-BR")}}</p>
-  <a mat-raised-button color="primary" routerLink="/calendario" routerLinkActive="active" ariaCurrentWhenActive="page">
-    Ir para o Calendário
-  </a>
+  <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">Ir para as fotos</a>
+  <a routerLink="/calendario" routerLinkActive="active" ariaCurrentWhenActive="page"> Ir para o Calendário</a>
   <app-header class="mobile-header"></app-header>
   <router-outlet></router-outlet>
-  <h2 class="h2">Foto do dia:</h2>
-  <app-foto></app-foto>
 </app-container>
