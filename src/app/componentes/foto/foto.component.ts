@@ -10,6 +10,7 @@ export class FotoComponent {
   fotos: string[] = [];
   imagemSelecionada: string = '';
   indicesEscolhidos: Set<number> = new Set();  // Usando um Set para garantir que os índices não se repitam
+  h2: string = 'Foto do dia:'
 
   constructor() {
     this.gerarFotos(13);  // Gera 13 imagens, de img1.jpg a img13.jpg
@@ -29,6 +30,7 @@ export class FotoComponent {
     const dataString = dataAtual.toLocaleDateString("pt-BR");  // Formato: 'yyyy-mm-dd'
     if(dataString === '06/04/2025'){
       this.imagemSelecionada = 'foto_dia06.jpg'
+      this.h2 = '🟩FELIZ DIA 6 DE ABRIL!!!🟩'
     }
     else{
       // Usando a data atual para gerar uma "semente" para a aleatoriedade

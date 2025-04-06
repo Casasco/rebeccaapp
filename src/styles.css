@@ -16,13 +16,18 @@ body {
 
 a{
     margin: 2px;
-    padding: 5px;
     border-radius: 10px;
     background-color: var(--cor-fundo-botao);
     color: var(--cor-texto-botao);
     text-align: center;
     margin: 10px;
-    text-decoration: none
+    text-decoration: none;
+    white-space: nowrap; /* Impede quebra de linha */
+    padding: 8px 12px; /* Ajuste o padding para evitar textos muito apertados */
+    display: flex; /* Para alinhar corretamente o conteúdo */
+    align-items: center; /* Alinhar o texto verticalmente */
+    justify-content: center; /* Centralizar o texto */
+    max-width: 100%; /* Evitar que fique maior do que deveria */
 }
 
 html, body { height: 100%; }
