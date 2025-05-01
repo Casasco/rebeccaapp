@@ -5,3 +5,11 @@
     max-width: 300px;
     padding-top: 15px;
   }
+
+  .divCalendario{
+    display: flex;
+    gap: 0px; /* espaço entre os botões */
+    justify-content: left; /* centraliza os botões horizontalmente */
+    flex-wrap: wrap; /* permite que quebrem de linha em telas menores */
+    border-bottom: 1px solid #0D6EFD;
+  }

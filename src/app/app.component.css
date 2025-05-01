@@ -4,5 +4,25 @@
     left: 20px;
  }
 
+ .button-container{
+   display: flex;
+   gap: 0px; /* espaço entre os botões */
+   justify-content: center; /* centraliza os botões horizontalmente */
+   flex-wrap: wrap; /* permite que quebrem de linha em telas menores */
+   border-bottom: 1px solid #0D6EFD;
+ }
+
+ .button{
+   display: inline-block;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 8px;
+   font-weight: bold;
+   transition: background-color 0.3s ease;
+ }
+
+ .button:hover {
+  background-color: #e06ab0; /* rosa um pouco mais escuro no hover */
+}
  
 

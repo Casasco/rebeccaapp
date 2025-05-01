@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaginaFotoComponent } from './pagina-foto.component';
+import { SetarDataComponent } from './setar-data.component';
 
-describe('PaginaFotoComponent', () => {
-  let component: PaginaFotoComponent;
-  let fixture: ComponentFixture<PaginaFotoComponent>;
+describe('SetarDataComponent', () => {
+  let component: SetarDataComponent;
+  let fixture: ComponentFixture<SetarDataComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PaginaFotoComponent]
+      imports: [SetarDataComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PaginaFotoComponent);
+    fixture = TestBed.createComponent(SetarDataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

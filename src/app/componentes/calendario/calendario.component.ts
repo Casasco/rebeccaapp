@@ -6,10 +6,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
+import { BotaosalvardataComponent } from '../botaosalvardata/botaosalvardata.component';
 
 @Component({
   selector: 'app-calendario',
-  imports: [MatDatepickerModule, MatNativeDateModule, MatFormFieldModule, MatInputModule, FormsModule, CommonModule, MatCardModule],
+  imports: [MatDatepickerModule, MatNativeDateModule, MatFormFieldModule, MatInputModule, FormsModule, CommonModule, MatCardModule, BotaosalvardataComponent],
   templateUrl: './calendario.component.html',
   styleUrl: './calendario.component.css'
 })

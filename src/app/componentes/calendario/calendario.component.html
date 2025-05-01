@@ -1,6 +1,9 @@
 <mat-card class="app-calendario">
     <mat-calendar [(selected)]="dataSelecionada"></mat-calendar>
   </mat-card>
+  <div class="divCalendario">
+    <p>Data selecionada: {{ dataSelecionada | date: 'dd/MM/yyyy' }}</p>
+    <app-botaosalvardata></app-botaosalvardata>
+  </div>
   
-  <p>Data selecionada: {{ dataSelecionada | date: 'dd/MM/yyyy' }}</p>
   
