@@ -48,5 +48,15 @@ button{
     border: none;
 }
 
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-bottom: 1px solid #0D6EFD;
+    margin-bottom: 15px;
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

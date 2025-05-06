@@ -3,7 +3,7 @@
   </mat-card>
   <div class="divCalendario">
     <p>Data selecionada: {{ dataSelecionada | date: 'dd/MM/yyyy' }}</p>
-    <app-botaosalvardata></app-botaosalvardata>
+    <button class="buttonClass" (click)="salvarData()">Salvar data</button>
   </div>
   
   

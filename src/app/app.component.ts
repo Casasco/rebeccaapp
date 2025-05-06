@@ -5,10 +5,12 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { FotoComponent } from './componentes/foto/foto.component';
 import { CalendarioComponent } from "./componentes/calendario/calendario.component";
 import { MatButtonModule } from '@angular/material/button';
+import { DataService } from './services/data.service';
+import { HeaderproximaComponent } from './componentes/headerproxima/headerproxima.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ContainerComponent, HeaderComponent, FotoComponent, CalendarioComponent, MatButtonModule, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, ContainerComponent, HeaderComponent, FotoComponent, CalendarioComponent, MatButtonModule, RouterLink, RouterLinkActive, HeaderproximaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -17,16 +19,7 @@ export class AppComponent implements OnInit {
   title = 'apprebecca';
   currentDate!: Date;
 
-
   ngOnInit(): void {
-    this.alterarVariaveisCSS();
-  }
-
-  alterarVariaveisCSS(): void {
-    const dataAtual = new Date().toISOString().split('T')[0]; // Formato YYYY-MM-DD
-
-    if (dataAtual === '2025-03-31') {
-      
-    }
+    
   }
 }

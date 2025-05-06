@@ -13,3 +13,12 @@
     flex-wrap: wrap; /* permite que quebrem de linha em telas menores */
     border-bottom: 1px solid #0D6EFD;
   }
+
+  .buttonClass{
+    display: inline-block;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: none;
+   font-weight: bold;
+   transition: background-color 0.3s ease;
+}

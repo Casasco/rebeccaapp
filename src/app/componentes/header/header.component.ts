@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
     const currentDate = new Date();
     const currentDateString = currentDate.toLocaleDateString('pt-BR');
     var targetDateString = targetDate.toLocaleDateString('pt-BR');
+    console.log(currentDate);
     
     if(currentDateString === targetDateString){
       this.mensagemHeader = 'Hoje a Rebecca se mudou :(';

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-botaosalvardata',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './botaosalvardata.component.css'
 })
 export class BotaosalvardataComponent {
+
+  
 
 }
